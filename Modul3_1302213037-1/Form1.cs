@@ -15,14 +15,14 @@ namespace Modul3_1302213037_1
         public Form1()
         {
             InitializeComponent();
+            Output.Text = "";
         }
 
-        int x, y, z;
-
+        int angka;
+        int hasil;
         private void button7_Click(object sender, EventArgs e)
         {
-            int num = 7;
-            Output.Text = num.ToString();
+            Output.Text = Output.Text + "7";
         }
 
         private void Output_Click(object sender, EventArgs e)
@@ -32,70 +32,64 @@ namespace Modul3_1302213037_1
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            int num = 1;
-            Output.Text= num.ToString();
+            
+            Output.Text = Output.Text + "1";
 
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            int num = 2;
-            Output.Text = num.ToString();
+            
+            Output.Text = Output.Text + "2";
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            int num = 3;
-            Output.Text = num.ToString();
+            Output.Text = Output.Text + "3";
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            int num = 4;
-            Output.Text = num.ToString();
+            Output.Text = Output.Text + "4";
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            int num = 5;
-            Output.Text = num.ToString();
+            Output.Text = Output.Text + "5";
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            int num = 6;
-            Output.Text = num.ToString();
+            Output.Text = Output.Text + "6";
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            int num = 8;
-            Output.Text = num.ToString();
+            Output.Text = Output.Text + "8";
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            int num = 9;
-            Output.Text = num.ToString();
+            Output.Text = Output.Text + "9";
         }
 
         private void btnEQ_Click(object sender, EventArgs e)
         {
-            y = int.Parse(Output.Text);
-            z = x + y;
-            Output.Text = z.ToString();
+            angka = int.Parse(Output.Text);
+            hasil += angka;
+            Output.Text = hasil.ToString();
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            int num = 0;
-            Output.Text = num.ToString();
+            Output.Text = Output.Text + "0";
         }
 
         private void btnPLUS_Click(object sender, EventArgs e)
         {
-            x = int.Parse(Output.Text);
-            Output.Text += " ";
+            angka = int.Parse(Output.Text);
+            hasil += angka;
+            Output.Text = "";
         }
     }
 }
